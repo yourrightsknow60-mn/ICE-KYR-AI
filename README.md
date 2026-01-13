@@ -17,19 +17,24 @@ Everything here is meant to be forked, adapted, or used as a reference.
 
 ---
 
-## What This Repository Contains
+## Repository Structure
 
-- **System prompts & interaction logic**  
-  Reference prompts and flows used to guide high-risk, rights-based interactions.
+### Core AI Instructions
+- **`ICE-encounters-gem-prompt.md`**  
+  The primary system instructions for the Gemini Gem. This file defines scope, tone, constraints, modes, and safety rules.
 
-- **Know Your Rights (KYR) materials**  
-  Curated, vetted educational resources for immigration encounters, warrants, detention, workplaces, and protests.
+### Knowledge Base
+- **`/knowledge-base/`**  
+  Files in this folder are intended to be uploaded directly into the Gemini Gem’s Knowledge Base.  
+  These include Know Your Rights materials, legal context, and supporting reference documents.
 
-- **Design constraints & guardrails**  
-  Explicit limitations on what the system can and cannot do, and why.
+### Physical Tools
+- **`/whistles/`**  
+  Contains files related to 3D printing emergency whistles used for community alerting and rapid response.
 
-- **Documentation for adaptation**  
-  Notes explaining how organizations can localize, modify, or extend the system.
+### Setup & Replication
+- **`how-to-create-the-gems.md`**  
+  A step-by-step guide for setting up this system in Google Gemini, including how to upload the prompt, attach the knowledge base, and configure the Gem safely.
 
 ---
 
@@ -56,10 +61,11 @@ This is a **reference implementation**, not a service.
 
 ## How to Use This Repo
 
-- **Fork it** and adapt it to your jurisdiction or organization  
-- **Extract components** (prompts, flows, documentation)  
-- **Use it as a baseline** for your own system design  
-- **Audit it** to understand assumptions and tradeoffs  
+- Fork the repository  
+- Upload `ICE-encounters-gem-prompt.md` as the system instructions for a Gemini Gem  
+- Upload all files in `/knowledge-base/` into the Gem’s Knowledge Base  
+- Follow `how-to-create-the-gems.md` to complete setup  
+- Adapt language, hotlines, and materials for your jurisdiction  
 
 No permission required.
 
@@ -80,7 +86,7 @@ No permission required.
 All materials are provided for educational and informational purposes only.  
 Nothing in this repository constitutes legal advice or creates an attorney-client relationship.
 
-Users and organizations are responsible for:
+Organizations are responsible for:
 - Verifying accuracy for their jurisdiction
 - Consulting qualified legal professionals
 - Ensuring safe and lawful use
